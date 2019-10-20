@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RELOS</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html{
+        background-color: rgba(102, 51, 153, 0.918);
+    }
+
+    body{
+        display: flex;
+        flex:1;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .reloj{
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        border: 1rem solid salmon;
+        margin-top: 15vh;
+        position: relative;
+    }
+
+    .manesilla{
+        width: 14rem;
+        height: 1rem;
+        background-color: yellow;
+        position: absolute;
+        top: 50%;
+        transform-origin: 100%;
+        transform: rotate(90deg);
+        transition: all 0.05s;
+        transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+
+</style>
+<body>
+    <div class="reloj">
+        <div class="manesilla hora"></div>
+        <div class="manesilla minutero"></div>
+        <div class="manesilla segundero"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
